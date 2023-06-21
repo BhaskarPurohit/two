@@ -14,6 +14,7 @@ export const ColorModeSwitcher = props => {
       pos={'fixed'}
       top={'4'}
       right={'4'}  //khud ki unit hai, 1unit ~~ 4px
+      zIndex={'overlay'}
       aria-label={`Switch to ${text} mode`}
       variant="ghost"
       color="current"
