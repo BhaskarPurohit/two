@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Header from './components/Header';
+import Home from './components/Home';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     <Router>
       <Header/>
       <Routes>
-        <Route/>
+        <Route path='/' element={<Home/>}/>
       </Routes>
 
     </Router>
