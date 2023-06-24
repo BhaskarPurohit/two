@@ -10,7 +10,17 @@ const Upload = () => {
             <AiOutlineCloudUpload size={"10vmax"}/>
             <form action="">
                 <HStack>
-                    <Input required type={"file"}/>
+                    <Input required type={"file"} css={{
+                        "&::file-selector-button":{
+                            border:'none',
+                            width: 'calc(100% +36px)',
+                            height: '100%',
+                            marginLeft: '-18px',
+                            color:'purple',
+                            backgroundColor:'white',
+                            cursor:'pointer'
+                        }
+                    }}/>
                     <Button colorScheme={"purple"} type={"submit"}>Upload</Button>
                 </HStack>
             </form>
